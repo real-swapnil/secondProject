@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Albert Sans;
+  color: var(--fontcolor);
+}
+h2{
+  font-weight: 900;
+  font-size: 1.985rem;
+  line-height: 2.285rem;
+  word-spacing: 0.525rem;
+  letter-spacing: 0.425rem;
+
+}
+h5{
+  font-weight: 400;
+  font-size: 1.095rem;
+  line-height: 1.805rem;
+  word-spacing: 0.395rem;
+  letter-spacing: 0.295rem;
+}
+h7{
+  font-weight: 300;
+  font-size: 0.8125rem;
+  line-height: 1.025rem;
+  word-spacing: 0.225rem;
+  letter-spacing: 0.125rem;
+}
+h4{
+  font-weight: 400;
+  font-size: 1.285rem;
+  line-height: 1.925rem;
+  word-spacing: 0.425rem;
+  letter-spacing: 0.325rem;
+
+}
+p{
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.725rem;
+  word-spacing: 0.325rem;
+  letter-spacing: 0.225rem;
+
+}
+:root{
+  --bgcolor: #22223b;
+  --fontcolor: #f2e9e4;
+  --thirdcolor: #9a8c98;
+  --fourthcolor: #4a4e69;
+  --fifthcolor: #4a4e69;
+  --newFont: #8ecae6;
+}
+body{
+  background: var(--bgcolor);
+}
+a{
+  text-decoration: none;
+}
+
+.container{
+  padding: 1.7995rem;
+
+}
+
+/* ------------NavBar------------- */
+.footer-nav .icons{
+  display: inline-flex;
+  gap: 1.725rem;
+  padding: 1.725rem 3.3725rem;
+  border-radius: 1.875rem;
+  justify-content: space-evenly;
+  color: var(--fontcolor);
+  background-color: var(--fourthcolor);
+  box-shadow: 2px 3px 2px var(--thirdcolor);
+  transition: .4s linear;
+}
+.footer-nav .icons:hover{
+  box-shadow: none;
+}
+.footer-nav{
+  position: absolute;
+  bottom: 0.995rem;
+  left: 41%;
+}
+.footer-nav .icons .fa-solid:hover, .fa-regular{
+  transition: .4s ease-in-out;
+}
+.footer-nav .icons .fa-solid:hover, .fa-regular:hover,
+.footer-nav .icons a.act i{
+  color: var(--newFont)
+}
+.footer-nav .icons a.act{
+  color: var(--newFont)
+}
+
+/* ------------------------ Home-sec---------------------- */
+
+.home-hero-sec{
+  display: flex;
+  align-items: center;
+}
+
+.home-hero-sec .info h2{
+  color: var(--newFont);
+}
+
+.home-hero-sec .profile-pic .img-box img{
+  position: relative;
+  top: .9235rem;
+  height: 320px;
+}
+.home-hero-sec .profile-pic .img-box{
+  border: 2px solid var(--fontcolor);
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 3px 1px 4px var(--fontcolor);
+}
+.home-hero-sec .profile-pic .img-item{
+  border: 2px solid var(--bgcolor);
+  border-radius: 50%;
+  box-shadow: 3px 1px 4px var(--thirdcolor);
+}
+/* ------------- Page load transition------------- */
+.home-sec, .resume{
+  animation: pageload 1s linear;
+
+}
+@keyframes pageload{
+  from{
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(10px);
+  }
+}
+/* -------------About Me------------------------- */
+.viewmore-button{
+  display: inline-block;
+  margin-top: 0.925rem;
+  padding: 0.725rem 1.425rem;
+  border: 2px solid var(--newFont);
+  border-radius: 25px;
+  box-shadow: 2px 3px 4px var(--newFont);
+  background: var(--newFont);
+  color: var(--fourthcolor);
+  font-weight: 700;
+  transition: .4s ease-in-out;
+}
+.viewmore-button:hover{
+  color: var(--fontcolor);
+  background-color: var(--bgcolor);
+  box-shadow: none;
+}
+/* --------------------Resume------------------------ */
+.resume h2{
+  justify-self: center;
+  /* margin-bottom: .9245rem; */
+}
+.resume .resume-parameter{
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.325rem;
+  padding-top: .7935rem;
+}
+.resume-parameter{
+  position: relative;
+}
+.resume-parameter .focus-effect{
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  background: var(--newFont);
+  top: 2.2rem;
+  z-index: -1;
+  
+}
+.resume-parameter .act~.focus-effect{
+  z-index: 1;
+  left: 12.3%;
+  width: 10%;
+  height: 10%;
+  transition: .4s ease-in-out;
+}
+.resume-parameter a:nth-child(1):hover~.focus-effect
+{
+  left: 12.3%;
+  width: 10%;
+  height: 10%;
+  transition: .4s ease-in-out;
+}
+.resume-parameter .act-skills~.focus-effect{
+  z-index: 1;
+  left: 47.2%;
+  width: 6.2%;
+  height: 10%;
+  transition: .4s ease-in-out;
+}
+.resume-parameter a:nth-child(2):hover~.focus-effect
+{
+  left: 47.2%;
+  width: 6.2%;
+  height: 10%;
+  transition: .4s ease-in-out;
+}
+
+.resume-parameter .act-edu~.focus-effect{
+  z-index: 1;
+  left: 78%;
+  width: 9.4%;
+  height: 10%;
+  transition: .4s ease-in-out;
+}
+.resume-parameter a:nth-child(3):hover~.focus-effect
+{
+  left: 78%;
+  width: 9.4%;
+  height: 10%;
+  transition: .4s ease-in-out;
+}
+/* ==========================Experience=================== */
+.exp .companies{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7925rem;
+  align-items: center;
+  animation: pageload 1s linear;
+}
+
+.companies{
+  /* background-color: blue; */
+  padding: 0 0 0 6.7975rem;
+  width: 98%;
+}
+
+.exp .companies div{
+  width: 30%;
+  height: 30%;
+  /* border: 2px solid var(--newFont); */
+  text-align: left;
+  padding: 1.325rem 0.7925rem;
+  padding-left: 2.7325rem;
+  background-color: var(--fifthcolor);
+  border-radius: 0.3555rem;
+}
+.exp .companies div p{
+  color: var(--newFont);
+}
+.exp .companies div h5{
+  font-weight: 700;
+}
+.dot{
+  height: 0.7215rem;
+  width: 0.7215rem;
+  color: var(--newFont);
+  border-radius: 50%;
+  background-color: var(--newFont);
+  display: inline-block;
+}
+
+/* ======================== skills ================================ */
+.skills .companies{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.3925rem;
+  align-items: center;
+  animation: pageload 1s linear;
+}
+
+.skills .companies{
+  /* background-color: blue; */
+  padding: 0 0 0 3.1975rem;
+  width: 98%;
+}
+
+.skills .companies div{
+  width: 15%;
+  height: 30%;
+  /* border: 2px solid var(--newFont); */
+  font-size: 2.7825rem;
+  vertical-align: middle;
+  text-align: center;
+  padding: 1.325rem 0.7925rem;
+  /* padding-left: 2.7325rem; */
+  background-color: var(--fifthcolor);
+  border-radius: 0.3555rem;
+}
+.skills .companies div i{
+  transition: .4s linear;
+}
+.skills .companies div i:hover{
+  color: var(--newFont);
+}
+
+/* =======================Portfolio top-nav=========================== */
+.container-nav{
+  padding: .7235rem;
+}
+
+.portfolio h2{
+  justify-self: center;
+  /* margin-bottom: .9245rem; */
+}
+.portfolio .portfolio-parameter{
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.325rem;
+  padding-top: .7935rem;
+}
+.portfolio-parameter{
+  position: relative;
+}
+.portfolio-parameter .focus-effect{
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  background: var(--newFont);
+  top: 2.2rem;
+  z-index: -1;
+  
+}
+.portfolio-parameter .act~.focus-effect{
+  z-index: 1;
+  left: 19.3%;
+  width: 10%;
+  height: 10%;
+  transition: .4s ease-in-out;
+}
+.portfolio-parameter a:nth-child(1):hover~.focus-effect
+{
+  left: 19.3%;
+  width: 10%;
+  height: 10%;
+  transition: .4s ease-in-out;
+}
+
+.portfolio-parameter .act-myServ~.focus-effect{
+  z-index: 1;
+  left: 69.2%;
+  width: 11%;
+  height: 10%;
+  transition: .4s ease-in-out;
+}
+.portfolio-parameter a:nth-child(2):hover~.focus-effect
+{
+  left: 69.2%;
+  width: 11%;
+  height: 10%;
+  transition: .4s ease-in-out;
+}
+
+/* ==================Portfolio========================= */
+.portF .companies{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7925rem;
+  align-items: center;
+  animation: pageload 1s linear;
+}
+
+.portF .companies{
+  /* background-color: blue; */
+  padding: 0 0 0 6.7975rem;
+  width: 98%;
+}
+
+.portF .companies div{
+  width: 30%;
+  height: 30%;
+  text-align: left;
+  padding: .325rem 0.325rem;
+  /* padding-left: 2.7325rem; */
+  /* background-color: var(--fifthcolor); */
+  border-radius: 0.3555rem;
+}
+/* .portF .companies div p{
+  color: var(--newFont);
+}
+.portF .companies div h5{
+  font-weight: 700;
+} */
+
+.portF div .img-bx{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.portF div .img-bx .img-box-details{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: -1%;
+  /* background-color: red; */
+}
+.portF div .img-bx .img-box-details p{
+  font-size: .7425rem;
+  color: var(--newFont);
+}
+.portF div .img-bx img:hover{
+  opacity: 12%;
+}
+.portF div .img-bx img{
+  width: 100%;
+  height: 100%;
+  border-radius: 0.3555rem;
+  z-index: 0;
+  opacity: 100%;
+}
+.portF .symb i{
+  /* border: 2px var(--fontcolor) solid; */
+  margin-top:3px;
+  border-radius: 50%;
+  /* background-color: red; */
+}
+
+/* =========================== myServices=================================== */
+
+.myServices .companies{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7925rem;
+  align-items: center;
+  animation: pageload 1s linear;
+}
+
+.companies{
+  /* background-color: blue; */
+  padding: 0 0 0 6.7975rem;
+  width: 98%;
+}
+
+.myServices .companies div{
+  width: 30%;
+  height: 30%;
+  /* border: 2px solid var(--newFont); */
+  text-align: left;
+  padding: 1.325rem 0.7925rem;
+  padding-left: 2.7325rem;
+  background-color: var(--fifthcolor);
+  border-radius: 0.3555rem;
+}
+.myServices .companies div p{
+  color: var(--newFont);
+}
+.myServices .companies div h5{
+  font-weight: 700;
+}
+
+.myServices i{
+  font-size: 1.9735rem;
+  transition: .4s linear;
+}
+.myServices .fa-github{
+  margin-left: 12.945rem;
+}
+.myServices .companies div:hover i{
+  color: var(--newFont);
+}
+
+/* =========================== form=========================== */
+
+form .contact{
+  width: 50%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact h2{
+  color: var(--newFont);
+  text-align: center;
+  margin: .9325rem;
+}
+.contact .your-message{
+  width: 99%;
+  height: 12.425rem
+}
+
+.contact input, .your-message{
+  outline: none;
+  color: var(--fontcolor);
+  border: none;
+  border-radius: .1325rem;
+  background-color: var(--thirdcolor);
+  margin-top: 1.1435rem;
+  display: inline-block;
+  padding: .725rem;
+  font-size: .93125rem;
+  /* margin: 1.1325rem; */
+  width: 49%;
+}
+::-webkit-input-placeholder{
+  color: var(--fontcolor);
+}
+.contact .send-message{
+  padding: .7125rem 1.9125rem;
+  border-radius: .5135rem;
+  color: var(--bgcolor);
+  background-color: var(--newFont);
+  box-shadow: 2px 4px 3px var(--newFont);
+  transition: .4s ease-in;
+  
+}
+.contact .send-message:hover{
+  color: var(--newFont);
+  background-color: var(--bgcolor);
+  border: 2px solid var(--newFont);
+  box-shadow: none;
+}
