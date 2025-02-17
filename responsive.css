@@ -1,8 +1,4 @@
 @media screen and (max-width: 700px) {
-  body {
-    /* background-color: yellow; */
-  }
-
   .footer-nav {
     position: absolute;
     top: 0.4rem;
@@ -10,7 +6,7 @@
   }
   .home-hero-sec .profile-pic .img-box {
     position: absolute;
-    bottom: 7rem;
+    top: 7rem;
     left: 0.18rem;
     border: 2px solid var(--fontcolor);
     border-radius: 50%;
