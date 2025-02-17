@@ -1,0 +1,28 @@
+@media screen and (max-width: 700px) {
+  body {
+    /* background-color: yellow; */
+  }
+
+  .footer-nav {
+    position: absolute;
+    top: 0.4rem;
+    left: 0.9rem;
+  }
+  .home-hero-sec .profile-pic .img-box {
+    position: absolute;
+    bottom: 7rem;
+    left: 0.18rem;
+    border: 2px solid var(--fontcolor);
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 3px 1px 4px var(--fontcolor);
+  }
+  .home-hero-sec .info {
+    position: absolute;
+    top: 30rem;
+    left: 0.018;
+  }
+  .home-hero-sec {
+    display: block;
+  }
+}
