@@ -65,4 +65,34 @@
   .myServices .fa-github {
     margin-left: 8.945rem;
   }
+
+  .exp .companies {
+    display: block;
+    /* flex-wrap: wrap;
+    gap: 0.7925rem;
+    align-items: center; */
+    animation: pageload 1s linear;
+  }
+  .companies {
+    /* background-color: blue; */
+    padding: 0 0 0 0;
+    width: 98%;
+  }
+  .exp .companies div {
+    width: 98%;
+    height: 30%;
+    /* border: 2px solid var(--newFont); */
+    text-align: left;
+    padding: 1.325rem 0.7925rem;
+    margin-bottom: 1.2rem;
+    padding-left: 2.7325rem;
+    background-color: var(--fifthcolor);
+    border-radius: 0.3555rem;
+  }
+
+  .skills .companies div {
+    width: 38%;
+    height: 24%;
+    /* border: 2px solid var(--newFont); */
+  }
 }
